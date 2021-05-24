@@ -1,0 +1,69 @@
+.search__input{
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgray;
+  height: 25px;
+  padding: 10px;
+  border-radius: 999px;
+  width: 75vw;
+  margin: 0 auto;
+  margin-top: 40px;
+  max-width: 560px;
+  flex: 1;
+  
+  
+}
+
+.search__inputIcon{
+  color: gray;
+}
+
+.search__inputMic{
+  color: rgb(66, 133, 244);;
+}
+
+.search__input > input {
+  flex: 1;
+  padding: 10px 20px;
+  border: none;
+  font-size: medium;
+}
+.search__input > input:focus {
+  
+  outline: none;
+ 
+}
+
+.search_buttons{
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+ 
+  
+}
+
+.search_buttons > button{
+  font-size: 13px;
+  height: 35px;
+ margin: 5px;
+ padding: 7px ;
+
+  background-color: #f8f8f8;
+  border: 1px solid white;
+  border-radius: 5px;
+
+  text-transform: inherit;
+  color: #5f6368;
+}
+
+.search_buttons > button:hover{
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+  background-color: #f8f8f8;
+  border: 1px solid #c6c6c6;
+  color:#222;
+}
+.search__buttonsHidden{
+  display: none !important;
+}

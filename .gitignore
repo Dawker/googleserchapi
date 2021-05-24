@@ -1,0 +1,4 @@
+node_modules
+.firebasesrc
+firebase.json
+build
