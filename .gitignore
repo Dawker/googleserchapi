@@ -1,4 +1,6 @@
 node_modules
 .firebasesrc
+.firebaserc
+keys.js
 firebase.json
 build
