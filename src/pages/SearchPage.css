@@ -24,8 +24,11 @@
 .search__input > input{ 
   width: 250px;
   font-size: 12px;
- 
-  
+
+}
+
+.search__text{
+  font-size: 14px;
 
 }
 

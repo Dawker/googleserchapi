@@ -9,14 +9,13 @@ import { actionTypes } from "../context/reducer";
 const Search = ({ hideButtons = false }) => {
   const [, dispatch] = useStateValue();
   const [error, setError] = useState("")
-
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState("");
   const history = useHistory()
 
 
   const handleSearch = (e) => {
     e.preventDefault();
-    if (input === "" || input == null | undefined || !input) {
+    if (!input) {
       setError("You need to type something")
       return;
     };
@@ -29,44 +28,31 @@ const Search = ({ hideButtons = false }) => {
     history.push('/search')
   }
 
-
   return (
     <form className="search">
       <div className="search__input">
         <SearchIcon className="search__inputIcon" />
         <input onChange={(e) => setInput(e.target.value)} placeholder={error ? error : "Search something..."} style={{ fontSize: 16 }} value={input} type="text" />
-
       </div>
       {!hideButtons ? (
         <div className="search_buttons">
           <Button type="submit" onClick={handleSearch} variant="outlined">
             Google Search
           </Button>
-
           <Button variant="outlined">
             I'm Feeling Lukcy
           </Button>
-
-
         </div>
-
       ) : (
         <div className="search_buttons">
           <Button className="search__buttonsHidden" type="submit" onClick={handleSearch} variant="outlined">
             Google Search
           </Button>
-
           <Button className="search__buttonsHidden" variant="outlined">
             I'm Feeling Lukcy
           </Button>
-
-
         </div>
       )}
-
-
-
-
     </form>
   )
 }
